@@ -1,10 +1,19 @@
 .App {
+  font-family: Inter;
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+button {
+  margin: 0 4px;
+}
+
+.input-div > input {
+  margin-top: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

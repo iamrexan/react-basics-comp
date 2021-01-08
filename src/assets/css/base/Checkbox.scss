@@ -1,0 +1,21 @@
+.checkbox-type-inline {
+  display: flex;
+
+  > div {
+    display: -webkit-inline-box;
+    flex-grow: 0.04;
+  }
+}
+
+.checkbox-type-default {
+  display: inline-grid;
+
+  > div {
+    display: -webkit-inline-box;
+    grid-gap: 1em;
+  }
+}
+
+label {
+  font-size: 1.4em;
+}
