@@ -2,14 +2,15 @@ import React, { ReactElement } from "react";
 import "../assets/css/base/Checkbox.scss";
 
 interface CheckboxObj {
-  checkboxList: {
-    id: string;
-    placeholder: string;
-  };
+  checkboxList: ChecklistObj;
   checkBoxListType?: string;
   style?: React.CSSProperties;
   name: string;
   disabled?: boolean;
+}
+
+interface ChecklistObj {
+  [index: number]: { id?: number | string; placeholder: string };
 }
 
 const Checkbox: React.FC<CheckboxObj> = (props): ReactElement => {

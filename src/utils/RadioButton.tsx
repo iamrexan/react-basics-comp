@@ -2,14 +2,15 @@ import React, { ReactElement } from "react";
 import "../assets/css/base/Checkbox.scss";
 
 interface RadioButtonObj {
-  radiobuttonList: {
-    id: string;
-    placeholder: string;
-  };
+  radiobuttonList: radiobuttonListObj;
   radiobuttonType?: string;
   style?: React.CSSProperties;
   name: string;
   disabled?: boolean;
+}
+
+interface radiobuttonListObj {
+  [index: number]: { id?: number | string; placeholder: string };
 }
 
 const RadioButton: React.FC<RadioButtonObj> = (props): ReactElement => {
